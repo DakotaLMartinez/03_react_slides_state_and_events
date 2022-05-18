@@ -168,9 +168,22 @@ Our goal today will be to talk about ⬇️
 
 In vanilla JS, our steps for handling events looked like this:
 
-1. Find piece of DOM: `const pizza = document.getElementById("pizza")`
-2. Add event listener to that piece: `pizza.addEventListener`
-3. Give callback to event listener (remove, add, etc.): `pizza.addEventListener("click", () => {console.log("It's Pizza Time!")})`
+<div>
+<SoloEditor>
+
+```js
+// 1. find a piece of DOM:
+const pizza = document.getElementById("pizza")
+// 2. Add an event listener to that piece
+pizza.addEventListener
+// 3. Give type and callback to the event listener:
+pizza.addEventListener("click", () => {
+  console.log("It's Pizza Time!")
+})
+```
+
+</SoloEditor>
+</div>
 
 In React, we don't have to do step 1, we can skip directly to step 2 by adding event handlers directly to our JSX. We still must supply the event handler with a callback.
 
@@ -722,6 +735,26 @@ Add a 'like' button to each project card (10-12 minutes)
 
 
 
+
+<Notes>
+
+
+
+</Notes>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+<Layout>
+
+## Filter by project name
+
+At this point, we want to start by examining what things need to be in state and when/how that state should be updated.
+
+</Layout>
 
 <Notes>
 
